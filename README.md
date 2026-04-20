@@ -1,4 +1,4 @@
-ProEmail AI Orchestrator
+<h1> ProEmail AI Orchestrator </h1>h1>
 
 AI-powered email generation platform built with a full-stack architecture using React and Spring Boot.
 
@@ -72,17 +72,14 @@ If you want to contribute:
 
 Contributions will be reviewed and merged after validation.
 
-Author : 
-AFzal Zaid
+Author : AFzal Zaid
 
-<img width="1365" height="598" alt="log in" src="https://github.com/user-attachments/assets/290d00f2-7c00-410c-9b27-f21b66852ed0" />
-<br>
-<img width="1365" height="593" alt="pricing" src="https://github.com/user-attachments/assets/965e1570-c96c-4896-a87b-9513b1274e5b" />
-<br>
-<img width="1365" height="597" alt="features" src="https://github.com/user-attachments/assets/8400f267-b7f8-4fcf-8fca-d99f288d5031" />
-<img width="1365" height="378" alt="Our mission" src="https://github.com/user-attachments/assets/329ac19a-dacb-4ebd-b405-a597ada138cc" />
-<img width="600" height="519" alt="result" src="https://github.com/user-attachments/assets/214fdaba-065a-47f9-a782-6f98cc2b4f62" />
-<img width="319" height="72" alt="step 3" src="https://github.com/user-attachments/assets/6c160aa2-845a-4b71-8e36-3a36624e3185" />
-<img width="150" height="216" alt="step 2" src="https://github.com/user-attachments/assets/2c6ae56e-4522-4104-a57f-e6b4f41c1881" />
-<img width="556" height="135" alt="step 1" src="https://github.com/user-attachments/assets/fa662535-9651-427a-98d1-770427ddd156" />
-<img width="1365" height="601" alt="Homepage" src="https://github.com/user-attachments/assets/280d818f-e0ca-460c-9d8d-c0c87b4e0a79" />
+<img width="1365" height="601" alt="Homepage" src="https://github.com/user-attachments/assets/ef7148a7-d750-4b9a-ac93-fd9f103ea8d7" /> <br>
+<img width="1365" height="368" alt="Screenshot 2026-04-20 122904" src="https://github.com/user-attachments/assets/26b3b852-a661-49bb-a8d2-379de9c4e267" /><br>
+<img width="600" height="519" alt="result" src="https://github.com/user-attachments/assets/a54517f0-0e76-4c56-a194-bea90f26702b" /><br>
+<img width="1365" height="598" alt="log in" src="https://github.com/user-attachments/assets/3271cd48-d4cc-4990-bd96-ab549965c346" /><br>
+<img width="1365" height="593" alt="pricing" src="https://github.com/user-attachments/assets/dfb00f21-4f5d-48d2-a9c4-6539902812b5" /><br>
+<img width="1365" height="597" alt="features" src="https://github.com/user-attachments/assets/f79494bf-e0ec-4e7d-9fb3-593d0650998a" /><br>
+<img width="1365" height="378" alt="Our mission" src="https://github.com/user-attachments/assets/a3cbfc8d-4b11-47b9-badb-5f4d611d7895" /><br>
+<img width="1350" height="433" alt="footer" src="https://github.com/user-attachments/assets/cce41cb8-4e49-42bc-ba51-eb625b187045" /><br>
+

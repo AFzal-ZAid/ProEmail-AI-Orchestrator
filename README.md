@@ -69,13 +69,16 @@ If you want to contribute:
 * Test thoroughly
 * Raise a Pull Request
 
+
 Contributions will be reviewed and merged after validation.
 
 Author : 
 AFzal Zaid
 
 <img width="1365" height="598" alt="log in" src="https://github.com/user-attachments/assets/290d00f2-7c00-410c-9b27-f21b66852ed0" />
+<br>
 <img width="1365" height="593" alt="pricing" src="https://github.com/user-attachments/assets/965e1570-c96c-4896-a87b-9513b1274e5b" />
+<br>
 <img width="1365" height="597" alt="features" src="https://github.com/user-attachments/assets/8400f267-b7f8-4fcf-8fca-d99f288d5031" />
 <img width="1365" height="378" alt="Our mission" src="https://github.com/user-attachments/assets/329ac19a-dacb-4ebd-b405-a597ada138cc" />
 <img width="600" height="519" alt="result" src="https://github.com/user-attachments/assets/214fdaba-065a-47f9-a782-6f98cc2b4f62" />

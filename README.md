@@ -1,4 +1,4 @@
-<h1> ProEmail AI Orchestrator </h1>h1>
+<h1> ProEmail AI Orchestrator </h1>
 
 AI-powered email generation platform built with a full-stack architecture using React and Spring Boot.
 

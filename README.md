@@ -47,6 +47,13 @@ weather-dashboard/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── WeatherCard.jsx
+
+
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── WeatherCard.jsx
 │   │   │   ├── ForecastCard.jsx
 │   │   │   ├── SearchBar.jsx
 │   │   │   ├── FavoritesBar.jsx

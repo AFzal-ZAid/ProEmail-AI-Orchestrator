@@ -114,34 +114,34 @@ Data Flow Diagram
 
 ---
 
+## 📁 Project Structure
+
 ProEmail-AI-Orchestrator/
+├── frontend/                     # React Application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/          # Reusable UI components
+│   │   ├── pages/               # Main pages (Home, Editor, etc.)
+│   │   ├── services/            # API calls (Axios / Fetch)
+│   │   ├── utils/               # Helper functions
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
 │
-├── frontend/ # React Application
-│ ├── public/
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Main pages (Home, Editor, etc.)
-│ │ ├── services/ # API calls (Axios / Fetch)
-│ │ ├── utils/ # Helper functions
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
-│
-├── backend/ # Spring Boot Application
-│ ├── src/main/java/
-│ │ └── com/proemail/
-│ │ ├── controller/ # REST Controllers (API layer)
-│ │ ├── service/ # Business logic layer
-│ │ ├── client/ # External API calls (Gemini)
-│ │ ├── model/ # Request/Response models
-│ │ ├── config/ # Configuration classes
-│ │ └── ProEmailApplication.java
-│ │
-│ ├── src/main/resources/
-│ │ ├── application.properties
-│ │ └── static/
-│ │
-│ └── pom.xml
+├── backend/                     # Spring Boot Application
+│   ├── src/main/java/com/proemail/
+│   │   ├── controller/          # REST Controllers
+│   │   ├── service/             # Business Logic
+│   │   ├── client/              # Gemini API Integration
+│   │   ├── model/               # Request/Response Models
+│   │   ├── config/              # Configuration Classes
+│   │   └── ProEmailApplication.java
+│   │
+│   ├── src/main/resources/
+│   │   ├── application.properties
+│   │   └── static/
+│   │
+│   └── pom.xml
 │
 ├── README.md
 └── .gitignore

@@ -1,10 +1,33 @@
 <h1> ProEmail AI Orchestrator </h1>
 
-AI-powered email generation platform built with a full-stack architecture using React and Spring Boot.
+# 🚀 ProEmail AI Orchestrator
 
-Privacy & Smart Automation for Emails
+An AI-powered full-stack web application that automates professional email generation using modern web technologies and intelligent AI models.
 
-Generate professional emails with AI while maintaining control over customization, tone, and structure.
+---
+
+## 📌 Overview
+
+ProEmail AI Orchestrator is designed to simplify and automate the process of writing professional emails.  
+It leverages AI to generate context-aware, structured, and tone-adjusted email content in real time.
+
+The system follows a clean architecture with a scalable backend and dynamic frontend, ensuring high performance and seamless user experience.
+
+---
+
+## 🧠 Key Features
+
+- ✨ AI-powered email generation using Gemini API  
+- ⚡ Real-time response rendering  
+- 🎯 Context-aware and tone-based email generation  
+- 🔗 RESTful API integration between frontend and backend  
+- 🧱 Scalable backend using Spring Boot  
+- 💡 Clean separation of concerns (Frontend ↔ Backend)  
+- 📱 Responsive and user-friendly UI  
+
+---
+
+## 🏗️ Architecture
 
 
 About
@@ -92,61 +115,6 @@ Data Flow Diagram
 - 📊 Improved user productivity and experience  
 
 ---
-
-## 🔧 Installation & Setup
-
-### Prerequisites
-- Java 17+
-- Node.js
-- Git
-
-### Backend Setup
-```bash
-git clone https://github.com/AFzal-ZAid/ProEmail-AI-Orchestrator.git
-cd backend
-mvn spring-boot:run
-
-
-🔗 API Flow
-
-Frontend (Axios)
-    ↓
-POST /api/email/generate
-    ↓
-EmailGeneratorController
-    ↓
-EmailGeneratorService.generateEmailReply()
-    ↓
-Build Prompt + Format Request
-    ↓
-WebClient.post() → Gemini API
-    ↓
-Extract JSON Response
-    ↓
-Return Generated Email Text
-    ↓
-Frontend Display & Copy
-
----
-
-Future Improvements
-
-* User authentication and session management
-* Email history and templates
-* Cloud deployment (AWS / Vercel / Render)
-* Multi-language support
-
----
-
-Contribute through Code
-
-If you want to contribute:
-
-* Fork the repository
-* Create a feature branch
-* Implement your feature
-* Test thoroughly
-* Raise a Pull Request
 
 
 Contributions will be reviewed and merged after validation.

@@ -41,7 +41,6 @@ Key Features
 
 📂 Directory Structure
 
-
 weather-dashboard/
 │
 ├── frontend/

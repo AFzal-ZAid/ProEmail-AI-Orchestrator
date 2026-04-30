@@ -40,62 +40,64 @@ Key Features
 * Tools: Git, Maven, Postman
 
 📂 Directory Structure
+
+
 weather-dashboard/
 │
-├── frontend/                          # React Frontend (Vite)
+├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── WeatherCard.jsx       # Current weather display
-│   │   │   ├── ForecastCard.jsx      # 5-day forecast
-│   │   │   ├── SearchBar.jsx         # City search
-│   │   │   ├── FavoritesBar.jsx      # Saved cities
-│   │   │   └── ThemeToggle.jsx       # Dark/light mode
+│   │   │   ├── WeatherCard.jsx
+│   │   │   ├── ForecastCard.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── FavoritesBar.jsx
+│   │   │   └── ThemeToggle.jsx
 │   │   ├── pages/
-│   │   │   └── Dashboard.jsx         # Main dashboard page
+│   │   │   └── Dashboard.jsx
 │   │   ├── hooks/
-│   │   │   ├── useWeather.js         # Weather API hook
-│   │   │   └── useTheme.js           # Theme management hook
+│   │   │   ├── useWeather.js
+│   │   │   └── useTheme.js
 │   │   ├── utils/
-│   │   │   ├── api.js                # API client
-│   │   │   └── weatherHelpers.js     # Utility functions
+│   │   │   ├── api.js
+│   │   │   └── weatherHelpers.js
 │   │   ├── styles/
-│   │   │   └── theme.js              # MUI theme config
-│   │   ├── App.jsx                   # Main app component
-│   │   └── main.jsx                  # Entry point
-│   ├── public/                        # Static assets
+│   │   │   └── theme.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
 │   ├── package.json
 │   ├── vite.config.js
 │   ├── index.html
 │   ├── .env.example
 │   └── README.md
 │
-├── backend/                           # Node.js/Express Backend
+├── backend/
 │   ├── src/
 │   │   ├── routes/
-│   │   │   ├── weatherRoutes.js      # Weather endpoints
-│   │   │   └── favoritesRoutes.js    # Favorites endpoints
+│   │   │   ├── weatherRoutes.js
+│   │   │   └── favoritesRoutes.js
 │   │   ├── controllers/
-│   │   │   ├── weatherController.js  # Weather logic
-│   │   │   └── favoritesController.js # Favorites logic
+│   │   │   ├── weatherController.js
+│   │   │   └── favoritesController.js
 │   │   ├── middleware/
-│   │   │   ├── errorHandler.js       # Error handling
-│   │   │   └── validation.js         # Input validation
+│   │   │   ├── errorHandler.js
+│   │   │   └── validation.js
 │   │   ├── services/
-│   │   │   ├── weatherService.js     # OpenWeatherMap API calls
-│   │   │   └── cacheService.js       # Response caching
+│   │   │   ├── weatherService.js
+│   │   │   └── cacheService.js
 │   │   ├── utils/
-│   │   │   └── logger.js             # Logging utility
-│   │   └── app.js                    # Express app setup
-│   ├── server.js                     # Server entry point
+│   │   │   └── logger.js
+│   │   └── app.js
+│   ├── server.js
 │   ├── package.json
 │   ├── .env.example
 │   ├── .gitignore
 │   └── README.md
 │
-├── docker-compose.yml               # Docker configuration (optional)
+├── docker-compose.yml
 ├── .gitignore
-├── ARCHITECTURE.md                  # Architecture documentation
-└── README.md                        # Main project README
+├── ARCHITECTURE.md
+└── README.md
 
 
 Data Flow Diagram

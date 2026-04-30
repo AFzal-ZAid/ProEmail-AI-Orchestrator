@@ -98,7 +98,7 @@ weather-dashboard/
 └── README.md                        # Main project README
 
 
-<h3>Data Flow Diagram</h3>
+Data Flow Diagram
 
 ┌─────────────────────────────────────────────────────┐
 │          FRONTEND (React + Vite + MUI)              │
@@ -113,10 +113,13 @@ weather-dashboard/
                         ↓
 ┌─────────────────────────────────────────────────────┐
 │     BACKEND (Spring Boot + Java 17)                 │
+
 │                                                     │
 │  POST /api/email/generate                          │
+
 │        ↓                                            │
 │  EmailGeneratorController                          │
+
 │        ↓                                            │
 │  EmailGeneratorService                             │
 │        ├─ buildPrompt()                            │

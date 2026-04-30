@@ -53,20 +53,6 @@ Key Features
 
 ---
 
-## 🛠️ Tech Stack
-
-* Frontend: React.js, Material UI, Axios
-* Backend: Spring Boot, Java
-* AI Integration: Gemini API
-* Tools: Git, Maven, Postman
-
-📂 Directory Structure
-
-
-
-
-Data Flow Diagram
-
 
 - Modular and maintainable design  
 - Efficient request handling and API communication  
@@ -77,7 +63,9 @@ Data Flow Diagram
 ## 🛠️ Tech Stack
 
 ### 🔹 Frontend
-- React.js  
+- React.js
+- Material Ui
+- Axios
 - JavaScript (ES6+)  
 - HTML5, CSS3  
 
@@ -91,7 +79,8 @@ Data Flow Diagram
 
 ### 🔹 Tools
 - Git & GitHub  
-- Postman  
+- Postman
+- Maven
 - IntelliJ / VS Code  
 
 ---
@@ -111,40 +100,6 @@ Data Flow Diagram
 - ⚡ Reduced manual email writing effort by ~70%  
 - 🚀 Fast API response with optimized backend handling  
 - 📊 Improved user productivity and experience  
-
----
-
-## 📁 Project Structure
-
-ProEmail-AI-Orchestrator/
-├── frontend/                     # React Application
-│   ├── public/
-│   ├── src/
-│   │   ├── components/          # Reusable UI components
-│   │   ├── pages/               # Main pages (Home, Editor, etc.)
-│   │   ├── services/            # API calls (Axios / Fetch)
-│   │   ├── utils/               # Helper functions
-│   │   ├── App.js
-│   │   └── index.js
-│   └── package.json
-│
-├── backend/                     # Spring Boot Application
-│   ├── src/main/java/com/proemail/
-│   │   ├── controller/          # REST Controllers
-│   │   ├── service/             # Business Logic
-│   │   ├── client/              # Gemini API Integration
-│   │   ├── model/               # Request/Response Models
-│   │   ├── config/              # Configuration Classes
-│   │   └── ProEmailApplication.java
-│   │
-│   ├── src/main/resources/
-│   │   ├── application.properties
-│   │   └── static/
-│   │
-│   └── pom.xml
-│
-├── README.md
-└── .gitignore
 
 ---
 

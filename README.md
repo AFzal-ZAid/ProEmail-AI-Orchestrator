@@ -39,14 +39,116 @@ Key Features
 * AI Integration: Gemini API
 * Tools: Git, Maven, Postman
 
+<h3>📂 Directory Structure</h3>
+  ProEmail-AI-Orchestrator/
+├── README.md                                    (Project documentation)
+├── ProEmail-Ai-Frontend/                       (React Frontend - 81.2%)
+│   ├── src/
+│   │   ├── App.jsx                             (Main application component)
+│   │   ├── main.jsx                            (Entry point)
+│   │   ├── App.css                             (Global styles)
+│   │   ├── index.css                           (Base styles)
+│   │   └── assets/                             (Images, icons, media)
+│   ├── public/                                 (Static assets)
+│   ├── package.json                            (Dependencies)
+│   ├── vite.config.js                          (Vite configuration)
+│   ├── eslint.config.js                        (Linting rules)
+│   ├── index.html                              (HTML entry)
+│   └── .env                                    (Environment variables)
+│
+└── emailSB/                                    (Spring Boot Backend - 17.4%)
+    ├── pom.xml                                 (Maven configuration)
+    ├── mvnw & mvnw.cmd                         (Maven wrappers)
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/emailSB/
+    │   │   │   ├── EmailSbApplication.java     (Spring Boot entry point)
+    │   │   │   └── app/
+    │   │   │       ├── EmailGeneratorController.java   (REST endpoint)
+    │   │   │       ├── EmailGeneratorService.java      (Business logic)
+    │   │   │       ├── EmailRequest.java               (DTO)
+    │   │   │       └── EmailWriterSbApplication.java   (Alternative app)
+    │   │   └── resources/
+    │   │       └── application.properties      (Spring config)
+    │   └── test/                               (Test files)
+    └── target/                                 (Compiled output)
 
 
-## 🔗 API Flow
+<h3>Data Flow Diagram</h3>
 
-* Frontend sends request via Axios
-* Backend processes request via REST APIs
-* Gemini API generates email content
-* Response returned in JSON format
+┌─────────────────────────────────────────────────────┐
+│          FRONTEND (React + Vite + MUI)              │
+│                                                     │
+│  [Input Email] → [Select Tone] → [Generate Reply]  │
+│         ↓              ↓              ↓             │
+│     [emailContent] [tone] ────────→ Axios POST      │
+│                                       ↓             │
+└─────────────────────────────────────────────────────┘
+                        ↓
+            http://localhost:8080
+                        ↓
+┌─────────────────────────────────────────────────────┐
+│     BACKEND (Spring Boot + Java 17)                 │
+│                                                     │
+│  POST /api/email/generate                          │
+│        ↓                                            │
+│  EmailGeneratorController                          │
+│        ↓                                            │
+│  EmailGeneratorService                             │
+│        ├─ buildPrompt()                            │
+│        │  └─ "Generate reply in {tone} tone for..." │
+│        │                                            │
+│        └─ WebClient.post()                         │
+│           └─ Call Gemini API                       │
+│              (+ API Key from ENV)                  │
+│                    ↓                               │
+└─────────────────────────────────────────────────────┘
+                        ↓
+        ┌───────────────────────────┐
+        │   Gemini API (Google)     │
+        │  (AI Text Generation)     │
+        └───────────────────────────┘
+                        ↓
+         Generate professional email reply
+         (respecting tone preference)
+                        ↓
+        ┌───────────────────────────┐
+        │  JSON Response Parsing     │
+        │  (Extract text content)   │
+        └───────────────────────────┘
+                        ↓
+        ┌───────────────────────────┐
+        │  Return to Frontend       │
+        │  (ResponseEntity<String>) │
+        └───────────────────────────┘
+                        ↓
+        ┌──────────────────────────────────────┐
+        │  Display Result + Copy Option        │
+        │  Skeleton loading during process     │
+        │  Error handling on failure           │
+        └──────────────────────────────────────┘
+
+
+
+🔗 API Flow
+
+Frontend (Axios)
+    ↓
+POST /api/email/generate
+    ↓
+EmailGeneratorController
+    ↓
+EmailGeneratorService.generateEmailReply()
+    ↓
+Build Prompt + Format Request
+    ↓
+WebClient.post() → Gemini API
+    ↓
+Extract JSON Response
+    ↓
+Return Generated Email Text
+    ↓
+Frontend Display & Copy
 
 ---
 

@@ -1,5 +1,3 @@
-<h1> ProEmail AI Orchestrator </h1>
-
 # 🚀 ProEmail AI Orchestrator
 
 An AI-powered full-stack web application that automates professional email generation using modern web technologies and intelligent AI models.
@@ -113,6 +111,40 @@ Data Flow Diagram
 - ⚡ Reduced manual email writing effort by ~70%  
 - 🚀 Fast API response with optimized backend handling  
 - 📊 Improved user productivity and experience  
+
+---
+
+ProEmail-AI-Orchestrator/
+│
+├── frontend/ # React Application
+│ ├── public/
+│ ├── src/
+│ │ ├── components/ # Reusable UI components
+│ │ ├── pages/ # Main pages (Home, Editor, etc.)
+│ │ ├── services/ # API calls (Axios / Fetch)
+│ │ ├── utils/ # Helper functions
+│ │ ├── App.js
+│ │ └── index.js
+│ └── package.json
+│
+├── backend/ # Spring Boot Application
+│ ├── src/main/java/
+│ │ └── com/proemail/
+│ │ ├── controller/ # REST Controllers (API layer)
+│ │ ├── service/ # Business logic layer
+│ │ ├── client/ # External API calls (Gemini)
+│ │ ├── model/ # Request/Response models
+│ │ ├── config/ # Configuration classes
+│ │ └── ProEmailApplication.java
+│ │
+│ ├── src/main/resources/
+│ │ ├── application.properties
+│ │ └── static/
+│ │
+│ └── pom.xml
+│
+├── README.md
+└── .gitignore
 
 ---
 

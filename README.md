@@ -39,39 +39,63 @@ Key Features
 * AI Integration: Gemini API
 * Tools: Git, Maven, Postman
 
-<h3>📂 Directory Structure</h3>
-  ProEmail-AI-Orchestrator/
-├── README.md                                    (Project documentation)
-├── ProEmail-Ai-Frontend/                       (React Frontend - 81.2%)
-│   ├── src/
-│   │   ├── App.jsx                             (Main application component)
-│   │   ├── main.jsx                            (Entry point)
-│   │   ├── App.css                             (Global styles)
-│   │   ├── index.css                           (Base styles)
-│   │   └── assets/                             (Images, icons, media)
-│   ├── public/                                 (Static assets)
-│   ├── package.json                            (Dependencies)
-│   ├── vite.config.js                          (Vite configuration)
-│   ├── eslint.config.js                        (Linting rules)
-│   ├── index.html                              (HTML entry)
-│   └── .env                                    (Environment variables)
+📂 Directory Structure
+weather-dashboard/
 │
-└── emailSB/                                    (Spring Boot Backend - 17.4%)
-    ├── pom.xml                                 (Maven configuration)
-    ├── mvnw & mvnw.cmd                         (Maven wrappers)
-    ├── src/
-    │   ├── main/
-    │   │   ├── java/emailSB/
-    │   │   │   ├── EmailSbApplication.java     (Spring Boot entry point)
-    │   │   │   └── app/
-    │   │   │       ├── EmailGeneratorController.java   (REST endpoint)
-    │   │   │       ├── EmailGeneratorService.java      (Business logic)
-    │   │   │       ├── EmailRequest.java               (DTO)
-    │   │   │       └── EmailWriterSbApplication.java   (Alternative app)
-    │   │   └── resources/
-    │   │       └── application.properties      (Spring config)
-    │   └── test/                               (Test files)
-    └── target/                                 (Compiled output)
+├── frontend/                          # React Frontend (Vite)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── WeatherCard.jsx       # Current weather display
+│   │   │   ├── ForecastCard.jsx      # 5-day forecast
+│   │   │   ├── SearchBar.jsx         # City search
+│   │   │   ├── FavoritesBar.jsx      # Saved cities
+│   │   │   └── ThemeToggle.jsx       # Dark/light mode
+│   │   ├── pages/
+│   │   │   └── Dashboard.jsx         # Main dashboard page
+│   │   ├── hooks/
+│   │   │   ├── useWeather.js         # Weather API hook
+│   │   │   └── useTheme.js           # Theme management hook
+│   │   ├── utils/
+│   │   │   ├── api.js                # API client
+│   │   │   └── weatherHelpers.js     # Utility functions
+│   │   ├── styles/
+│   │   │   └── theme.js              # MUI theme config
+│   │   ├── App.jsx                   # Main app component
+│   │   └── main.jsx                  # Entry point
+│   ├── public/                        # Static assets
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── index.html
+│   ├── .env.example
+│   └── README.md
+│
+├── backend/                           # Node.js/Express Backend
+│   ├── src/
+│   │   ├── routes/
+│   │   │   ├── weatherRoutes.js      # Weather endpoints
+│   │   │   └── favoritesRoutes.js    # Favorites endpoints
+│   │   ├── controllers/
+│   │   │   ├── weatherController.js  # Weather logic
+│   │   │   └── favoritesController.js # Favorites logic
+│   │   ├── middleware/
+│   │   │   ├── errorHandler.js       # Error handling
+│   │   │   └── validation.js         # Input validation
+│   │   ├── services/
+│   │   │   ├── weatherService.js     # OpenWeatherMap API calls
+│   │   │   └── cacheService.js       # Response caching
+│   │   ├── utils/
+│   │   │   └── logger.js             # Logging utility
+│   │   └── app.js                    # Express app setup
+│   ├── server.js                     # Server entry point
+│   ├── package.json
+│   ├── .env.example
+│   ├── .gitignore
+│   └── README.md
+│
+├── docker-compose.yml               # Docker configuration (optional)
+├── .gitignore
+├── ARCHITECTURE.md                  # Architecture documentation
+└── README.md                        # Main project README
 
 
 <h3>Data Flow Diagram</h3>
